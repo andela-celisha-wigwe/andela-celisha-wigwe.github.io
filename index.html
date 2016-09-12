@@ -6,17 +6,18 @@
 	
 	<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"></script>
 	<script src="names.js" type="text/javascript"></script>
 
 	<script type="text/javascript">
-
-		var listHTML = '';
-		var listOfNames = names.map( (name) => {
-			listHTML += '<span>' + name + '</span>'
+		var names = _.uniq(names);
+		var listContent = '';
+		var listOfNames = names.sort().map( (name) => {
+			listContent += '<span>' + name + '</span>'
 		})
 
 		$(document).ready( function () {
-			$('#name-list').html(listHTML);
+			$('#name-list').html(listContent);
 		})
 	</script>
 
@@ -43,7 +44,6 @@
 		.author {
 			cursor: pointer;
 			text-align: right;
-		}cursor: pointer;
 		}
 
 		.author a:hover {
