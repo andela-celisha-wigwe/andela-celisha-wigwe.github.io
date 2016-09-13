@@ -1,0 +1,44 @@
+#name-list {
+	-moz-column-width: 12em;
+	-moz-columns: 12em;
+	-webkit-columns: 12em;
+	columns: 9em;
+	background: #f2f2f2;
+	padding: 5px;
+}
+#name-list span {
+	display: block;
+	display: block;
+	padding: 5px;
+}
+#name-list span:hover {
+	text-decoration: underline;
+	color: #2c9fc9;
+	cursor: pointer;
+}
+
+.foot {
+	cursor: pointer;
+	text-align: center;
+    padding: 10px;
+}
+
+.foot p {
+	display: inline-block;
+}
+
+.foot a:hover {
+	text-decoration: none !important;
+}
+
+.author {
+	text-align: right;
+}
+
+.license {
+	text-align: left;
+}
+
+.title {
+	text-align: center;
+}

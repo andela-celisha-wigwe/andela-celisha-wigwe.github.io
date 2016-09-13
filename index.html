@@ -1,69 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Names</title>
+	<title>Chijioke Elisha-Wigwe</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./main.css">
 	
 	<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"></script>
-	<script src="names.js" type="text/javascript"></script>
-
-	<script type="text/javascript">
-		var names = _.uniq(names);
-		var listContent = '';
-		var listOfNames = names.sort().map( (name) => {
-			listContent += '<span>' + name + '</span>'
-		})
-
-		$(document).ready( function () {
-			$('#name-list').html(listContent);
-		})
-	</script>
-
-	<style type="text/css">
-		#name-list {
-			-moz-column-width: 12em;
-			-moz-columns: 12em;
-			-webkit-columns: 12em;
-			columns: 9em;
-			background: #f2f2f2;
-			padding: 5px;
-		}
-		#name-list span {
-			display: block;
-			display: block;
-			padding: 5px;
-		}
-		#name-list span:hover {
-			text-decoration: underline;
-			color: #2c9fc9;
-			cursor: pointer;
-		}
-
-		.author {
-			cursor: pointer;
-			text-align: right;
-		}
-
-		.author a:hover {
-			text-decoration: none !important;
-		}
-
-		.title {
-			text-align: center;
-		}
-
-	</style>
 
 </head>
 <body>
 	<div class="container">
-		<h2 class="title">This is open source list of Nigerian names</h2>
-		<div id="name-list">
+
+		<div class="jumbotron">
+		  <h3>This is open source list of Nigerian names</h3>
+		  <p><a class="btn btn-primary btn-lg" href="./names.html" role="button">View List</a></p>
 		</div>
-		<div class="author">
-			<p>#TIA <a href="https://github.com/andela-celisha-wigwe">Chijioke Elisha-Wigwe</a></p>
+
+		<div class="foot">
+			<p class="license"><a href="https://github.com/andela-celisha-wigwe/andela-celisha-wigwe.github.io/blob/master/LICENSE.md">MIT License </a></p>
+			<p class="author">#TIA <a href="https://github.com/andela-celisha-wigwe">Chijioke Elisha-Wigwe</a></p>
 		</div>
 	</div>
 </div>
