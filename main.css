@@ -1,3 +1,7 @@
+body {
+	padding: 20px;
+}
+
 #name-list {
 	-moz-column-width: 12em;
 	-moz-columns: 12em;
