@@ -1,6 +1,6 @@
 # Popular Nigerian Names
 
-This is an open-source list of popular Nigerian Names.
+[This](https://andela-celisha-wigwe.github.io) is an open-source list of popular Nigerian Names.
 
 ## License
 
