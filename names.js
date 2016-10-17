@@ -841,7 +841,6 @@ names = [
 'Sodiq',
 'Sola',
 'Solomon',
-'Srrgr',
 'Stanley',
 'Stella',
 'Stephen',
